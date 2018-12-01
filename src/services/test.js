@@ -1,7 +1,7 @@
 const customer1 = {
     name: 'sajed',
     last: 'sh',
-    getName: ()=>{}
+    getName: ()=>{return 'something'}
 }
 
 console.log(customer1.name)
