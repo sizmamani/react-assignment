@@ -1,0 +1,38 @@
+@import '../../statics/scss/variable';
+@import '../../statics/scss/responsive';
+.slider-container{
+    height: 640px;
+    width: 100%;
+    background: black;
+    position: relative;
+    .slide{
+        font-family: $font-family-arvo;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../../statics/images/slide_1.jpg);
+        .description{
+            font-size: 60px;
+            font-weight: 900;
+            color: $color-white;
+            max-width: 500px;
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            text-align: right;
+            padding: 0 5px;
+            box-sizing: border-box;
+            text-shadow: $color-black 1px 3px 5px;
+            &::selection {
+                background: $color-orange;
+              }
+            &::-moz-selection {
+                background: $color-orange;
+              }
+        }
+    }
+}

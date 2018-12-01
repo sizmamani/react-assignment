@@ -1,0 +1,9 @@
+@import '../../statics/scss/variable';
+@import '../../statics/scss/responsive';
+.footer{
+    background: $color-black;
+    height: 30px;
+    width: 980px;
+    left: -20px;
+    bottom: -20px;
+}

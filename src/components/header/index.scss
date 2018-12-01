@@ -1,0 +1,65 @@
+@import '../../statics/scss/variable';
+@import '../../statics/scss/responsive';
+.header-container {
+    font-family: $font-family-source;
+    position: relative;
+    width: 980px;
+    height: 110px;
+    z-index: 1;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    transition: all ease 0.3s;
+    &.fixed{
+        height: 60px;
+        background-color:  rgba(0, 0, 0, 0.9);
+        .nav{
+            bottom: 15px;
+            transition: all ease 0.3s;
+        }
+        .logo{
+            transition: all ease 0.3s;
+            top: 7px;
+            width: 45px;
+            height: 45px;
+            left: 15px;
+        }
+    }
+    .nav{
+        transition: all ease 0.3s;
+        text-align: right;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 20px;
+        z-index: 2;
+        padding-right: 20px;
+        button{
+            font-family: inherit;
+            font-weight: 700;
+            padding: 2px;
+            width: 145px;
+            font-size: 19px;
+            border-radius: 5px;
+            border: solid 1px $color-black;
+            background: $color-white;
+            opacity: 0.6;
+            box-sizing: border-box;
+            margin-left: 20px;
+            text-align: center;
+        }
+    }
+    .logo {
+        transition: all ease 0.3s;
+        position: absolute;
+        width: 154px;
+        height: 181px;
+        background-size: contain;
+        background-image: url(../../statics/images/logo.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 2;
+        top: 20px;
+        left: 20px;
+    }
+}

@@ -1,0 +1,83 @@
+@import '../../../../statics/scss/variable';
+@import '../../../../statics/scss/responsive';
+.shop-container{
+    padding: 20px;
+    .title{
+        font-family: $font-family-arvo;
+        font-weight: 700;
+        color: $color-red;
+        margin-bottom: 20px;
+    }
+    .item-container{
+        height: 85px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: solid 1px $color-grey;
+        box-shadow: $color-black 1px 1px 3px;
+        position: relative;
+        .shop-detail{
+            position: absolute;
+            width: 460px;
+            height: 255px;
+            border-radius: 10px;
+            bottom: 7px;
+            z-index: 4;
+            background: $color-white;
+            left: 260px;
+            border: solid 1px $color-grey;
+            box-shadow: $color-black 1px 1px 5px;
+            padding: 20px;
+            cursor: default;
+            a {
+                text-decoration: none;
+            }
+            .close {
+                position: absolute;
+                z-index: 5;
+                right: 20px;
+                top:20px;
+                width:24px;
+                height: 24px;
+            }
+        }
+        &.selected {
+            box-shadow: inset 0 1px 4px $color-black;
+        }
+        .item{
+            line-height: 85px;
+            box-sizing: border-box;
+            padding: 0 20px;
+            float: left;
+            height: inherit;
+            font-size: 18px;
+            &.name{
+                width: 320px;
+                span{
+                    font-weight: bold;
+                    display: inline-block;
+                }
+            }
+            &.type{
+                width: 450px;
+                text-align: center;
+                span{
+                    display: inline-block;
+                }
+            }
+            &.address{
+                width: 168px;
+            }
+        }
+    }
+    .more{
+        height: 45px;
+        border-radius: 10px;
+        color: $color-orange;
+        text-align: center;
+        line-height: 45px;
+        margin-top: 45px;
+        margin-bottom: 90px;
+        text-shadow: $color-black 1px 1px 1px;
+        font-family: 'Arvo';
+    }
+}
