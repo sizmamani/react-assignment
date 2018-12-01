@@ -10,12 +10,13 @@ class request {
     })
     this.service = service;
   }
-  get(node, callback) {
+  get(node, callback, error) {
     return this.service.request({
       method: 'GET',
       url: `${baseUrl}/${node}`,
       responseType: 'json',
-    }).then((response) => callback(response.data));
+    }).then((response) => callback(response.data))
+    .catch(error);
   }
 }
 
